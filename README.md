@@ -48,4 +48,5 @@ For 4 tile export
 
 
 
+
 I shall primarily focus on the steps for generating a single tile export, but will explain additional steps required for a 4 tile export at the end – which would suit those terrains that are 40960px x 40960px and higher.
