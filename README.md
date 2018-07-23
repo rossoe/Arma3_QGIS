@@ -14,7 +14,6 @@ Brief overview of steps:
 For single tile export -
 
 •	Load in just the .map files into QGIS
-
 •	Merge Rasters
 
 •	Align raster to 1mtr cell size and re-project to appropriate CRS for its geo location
