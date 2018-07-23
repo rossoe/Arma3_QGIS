@@ -11,7 +11,7 @@ Software required:
 
 Brief overview of steps:
 
-For single tile export 
+For single tile export -
 
 •	Load in just the .map files into QGIS
 
@@ -29,7 +29,7 @@ For single tile export
 
 
 
-For 4 tile export 
+For 4 tile export -
 
 •	Load in just the .map files into QGIS 
 
