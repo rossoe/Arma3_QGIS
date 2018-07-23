@@ -25,7 +25,6 @@ For single tile export -
 For 4 tile export -
 
 - Load in just the .map files into QGIS 
-
 - Merge Rasters
 - Align raster to 1mtr cell size and re-project to appropriate CRS for its geo location
 - Change the ‘Project Coordinate Reference System’ (CRS) to match CRS in previous step
