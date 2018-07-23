@@ -10,7 +10,7 @@ Software required:
 **QGIS 3.2.0** -  https://qgis.org/en/site/forusers/download.html
 
 Brief overview of steps:
-
+<br>
 For single tile export 
 
 •	Load in just the .map files into QGIS
