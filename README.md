@@ -5,9 +5,9 @@ I will be running through the steps to export satellite images from QGIS ready f
 
 Software required:
 
-Terra Incognita   https://sourceforge.net/projects/terraincognita2/
+**Terra Incognita**   https://sourceforge.net/projects/terraincognita2/
 
-QGIS 3.2.0   https://qgis.org/en/site/forusers/download.html
+**QGIS 3.2.0**   https://qgis.org/en/site/forusers/download.html
 
 Brief overview of steps:
 
