@@ -31,7 +31,7 @@ For 4 tile export -
 - Create shapefile layer
 - Create grid – 2 x 2 Feature 
 - Move each quarter to its own shapefile layer
-- Export 4 sat images ready for Terrain Builder using ‘clip raster by mask layer’
+- Export 4 sat images ready for Terrain Builder using ‘clip raster by mask layer’ 
 
 
 I shall primarily focus on the steps for generating a single tile export, but will explain additional steps required for a 4 tile export at the end – which would suit those terrains that are 40960px x 40960px and higher.
