@@ -18,7 +18,7 @@ I have referenced Terra Incognita because i felt it was the easiest way to obtai
 
 **First an overview of the steps required:**
 
-==== For Heightmap: ====
+# For Heightmap:
 
   * Load heightmap into QGIS (drag and drop)
   * Set QGIS to appropriate CRS for location of your HM
@@ -29,7 +29,7 @@ I have referenced Terra Incognita because i felt it was the easiest way to obtai
     * Second to convert to .asc file
 
 
-==== For Satellite image ====
+# For Satellite image:
 
 **For single tile export**
 
