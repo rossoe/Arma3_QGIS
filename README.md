@@ -208,15 +208,18 @@ os.system(r'''gdalwarp -t_srs EPSG:32620 -r cubic -wo SOURCE_EXTRA=1000 -tr 1.0 
 
 Some explanation of the key parameters:
 
-**-t_srs EPSG:32620**\\
+**-t_srs EPSG:32620**
+
 Sets the CRS
 
-**-tr 1.0 1.0**\\
+**-tr 1.0 1.0**
+
 Sets the resolution of your satellite image to 1mtr per pixel - which is recommended. Make sure it matches your settings within Terrain Builder.
 
 ![Ross-QGIS-Tutorial-new-05.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-05.png)
 
-**-te 576787.687480 1841104.815839 597267.687480 1861584.815839**\\
+**-te 576787.687480 1841104.815839 597267.687480 1861584.815839**
+
 Clips to shapefile square extents
 
 
