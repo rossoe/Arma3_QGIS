@@ -137,8 +137,8 @@ The blank window on the right is where you will paste GDAL commands
 
 Now you are ready to edit the command below to match your data - sections in bold are the parts to edit:
 
-import os
-os.system(r'''gdalwarp -t_srs EPSG:32620 -wo SOURCE_EXTRA=1000 -tr 5.0 5.0 -srcnodata ”-9999” -r cubic -of GTiff -te 576787.687480 1841104.815839 597267.687480 1861584.815839 D:/Arma/Heightmaps/Opentopo/output_srtm.asc D:/Arma/QGIS/Montserrat/converted.tif''')
+`<import os
+os.system(r'''gdalwarp -t_srs EPSG:32620 -wo SOURCE_EXTRA=1000 -tr 5.0 5.0 -srcnodata ”-9999” -r cubic -of GTiff -te 576787.687480 1841104.815839 597267.687480 1861584.815839 D:/Arma/Heightmaps/Opentopo/output_srtm.asc D:/Arma/QGIS/Montserrat/converted.tif''')`>
 
 Some explanation of the key parameters:
 
