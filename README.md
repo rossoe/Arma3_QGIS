@@ -50,7 +50,7 @@ I have referenced Terra Incognita because i felt it was the easiest way to obtai
 **And now detailed steps for:**
 
 
-===== Heightmap: =====
+## Heightmap: 
 
 **Drag and drop your heightmap '.asc' into QGIS**
 
