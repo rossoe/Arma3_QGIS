@@ -1,4 +1,4 @@
-# Arma3_QGIS
+# QGIS Real World Data Tutorial
 
 This process has often been described using Global Mapper, but I wanted to detail the equivalent steps within the open source (free) GIS app - QGIS.
 
