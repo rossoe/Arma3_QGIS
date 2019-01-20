@@ -325,7 +325,7 @@ Before loading the satellite image into Terrrain Builder delete the .bmp.aux fil
 {{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-08.png}}
 
 
-## Managing the project assets within QGIS
+# Managing the project assets within QGIS
 
 
 Save your QGIS project so that you can return to export further data at a later date.
