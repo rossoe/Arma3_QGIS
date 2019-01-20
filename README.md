@@ -104,27 +104,27 @@ See a short video example using the **Advanced Digitizing** tool:
 
 After the last **left mouse click** from the step above, the tool is still waiting to plot more points, so to finalise the square do a **right mouse click**
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-20b.png}}
+![Ross-QGIS-Tutorial-20b.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-20b.png)
 
 This will then bring up an attributes dialogue -- just type any number and Enter
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-21.png}}
+![Ross-QGIS-Tutorial-21b.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-21b.png)
 
 **Obtain extents from square feature**
 
 Activate the toolbox if it is not already available
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-12.png}}
+![Ross-QGIS-Tutorial-new-12.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-12.png)
 
 Start typing '**vector**' in Processing Toolbox search bar, and you will see '**Vector information**'
 
 Double click it and make sure your square **input layer** is selected - then just click **Run**
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-01.png}}
+![Ross-QGIS-Tutorial-new-01.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-01.png)
 
 You will only need to copy the **Extent** figures, which we will use within the GDAL commands in the next step
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-02.png}}
+![Ross-QGIS-Tutorial-new-02.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-02.png)
 
 **Run the first GDAL command which will - set CRS, cell size and then clip to shapefile square extents**
 
@@ -132,7 +132,7 @@ From menu - **Plugins** > **Python Console**
 
 Click '**Show Editor**'
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-03.png}}
+![Ross-QGIS-Tutorial-new-03.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-03.png)
 
 The blank window on the right is where you will paste GDAL commands
 
@@ -151,7 +151,7 @@ CRS to match where the heightmap is from in the world.
 
 The desired resolution of your heightmap, match with **Cell size** set within your Mapframe properties in Terrain Builder:
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-04.png}}
+![Ross-QGIS-Tutorial-new-04.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-04.png)
 
 **-te 576787.687480 1841104.815839 597267.687480 1861584.815839**
 
@@ -181,7 +181,7 @@ os.system(r'''gdal_translate -of AAIGrid D:/Arma/QGIS/Montserrat/converted.tif D
 
 **Load in just the '.map' files generated from Terra incognita into QGIS**
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-1b.png}}
+![Ross-QGIS-Tutorial-1b.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-1b.png)
 
 **Merge Rasters**
 
@@ -189,13 +189,13 @@ Top Menu -** Raster **→ **Miscellaneous **→ **Merge**
 
 Select all your .map files as input layers
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-3b.png}}
+![Ross-QGIS-Tutorial-3b.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-3b.png)
 
 change **Output data type** to ‘Byte’ as the default is ‘Float32’.
 
 Select ‘**Save to File**’ under Merged -- as the default is to a temporary file.
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-2b.png}}
+![Ross-QGIS-Tutorial-2b.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-2b.png)
 
 **Obtain extents from square feature**
 
@@ -214,7 +214,7 @@ Sets the CRS
 **-tr 1.0 1.0**\\
 Sets the resolution of your satellite image to 1mtr per pixel - which is recommended. Make sure it matches your settings within Terrain Builder.
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-05.png}}
+![Ross-QGIS-Tutorial-new-05.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-05.png)
 
 **-te 576787.687480 1841104.815839 597267.687480 1861584.815839**\\
 Clips to shapefile square extents
@@ -240,15 +240,15 @@ Set **Grid type** to ‘**Rectangle (polygon)**’ & the **Horizontal & Vertical
 
 Set it to save new grid feature to .shp file
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-26b.png}}
+![Ross-QGIS-Tutorial-26b.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-26b.png)
 
 After clicking '**Use Layer Extent**' Select the shapefile layer for your square
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-13.png}}
+![Ross-QGIS-Tutorial-new-13.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-13.png)
 
 After clicking **Run**, your original square will then be Covered with a new grid of 4 tiles -- perfect quarters of your original square
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-30b.png}}
+![Ross-QGIS-Tutorial-30b.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-30b.png)
 
 **Move each quarter to its own shapefile layer**
 
@@ -256,11 +256,11 @@ Because you will need to export each quarter separately for use in Terrain Build
 
 Click **Select Features** -
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-31.png}}
+![Ross-QGIS-Tutorial-31.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-31.png)
 
 And select the first quarter:
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-32b.png}}
+![Ross-QGIS-Tutorial-32b.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-32b.png)
 
 Top Menu -- **Edit** > **Copy Features**
 
@@ -270,23 +270,23 @@ Save shapefile layer to something obvious
 
 I’ve used ‘**TL**’ for top left.
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-33b.png}}
+![Ross-QGIS-Tutorial-33b.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-33b.png)
 
 Repeat for the remaining quarters and you’ll have something like below, ‘Grid’ can be deleted.
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-34b.png}}
+![Ross-QGIS-Tutorial-34b.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-34b.png)
 
 You will then have 4 tiles which we can use to gather each quarters extents
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-35b.png}}
+![Ross-QGIS-Tutorial-35b.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-35b.png)
 
 **Obtain extents from each quarter feature**
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-06.png}}
+![Ross-QGIS-Tutorial-new-06.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-06.png)
 
 Copy extents to clipboard
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-07.png}}
+![Ross-QGIS-Tutorial-new-07.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-07.png)
 
 And list them out for safe keeping -
 
@@ -311,18 +311,18 @@ os.system(r'''gdalwarp -t_srs EPSG:32620 -r cubic -wo SOURCE_EXTRA=1000 -tr 1.0 
 
 Open your asc and change the following:
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-14.png}}
+![Ross-QGIS-Tutorial-new-14.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-14.png)
 
 Before loading the asc file into Terrain Builder, delete the .prj file. Otherwise it will not import into TB.
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-09.png}}
+![Ross-QGIS-Tutorial-new-09.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-09.png)
 
 **Satellite image**
 
 
 Before loading the satellite image into Terrrain Builder delete the .bmp.aux file
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-08.png}}
+![Ross-QGIS-Tutorial-new-08.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-08.png)
 
 
 # Managing the project assets within QGIS
@@ -334,7 +334,7 @@ Save your QGIS project so that you can return to export further data at a later 
 Layers can be tidied up to hold the essentials ready for the next time you want to re-run GDAL commands, or export anything else like road shapefiles or mask layers etc.
 
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-11.png}}
+![Ross-QGIS-Tutorial-new-11.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-11.png)
 
 **Coming Soon:**
   * Road shapefile creation
