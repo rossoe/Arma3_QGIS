@@ -108,7 +108,7 @@ After the last **left mouse click** from the step above, the tool is still waiti
 
 This will then bring up an attributes dialogue -- just type any number and Enter
 
-![Ross-QGIS-Tutorial-21b.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-21b.png)
+![Ross-QGIS-Tutorial-21.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-21.png)
 
 **Obtain extents from square feature**
 
