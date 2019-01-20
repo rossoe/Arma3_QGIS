@@ -54,6 +54,8 @@ I have referenced Terra Incognita because i felt it was the easiest way to obtai
 
 **Drag and drop your heightmap '.asc' into QGIS**
 
+This tutorial covers single raster heightmap as per the kind you will find on opentopo ![here](http://opentopo.sdsc.edu/raster?opentopoID=OTSRTM.082015.4326.1), I will detail steps for heightmaps spread across muliptle rasters in another update. as they will require additional steps likely including Merge / Build Virtual Raster commands.
+
 **Set QGIS to appropriate CRS for location of your HM**
 
 Clicking on the CRS section bottom right within QGIS -- will bring up the Project Properties for CRS
