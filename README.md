@@ -142,23 +142,23 @@ os.system(r'''gdalwarp -t_srs EPSG:**32620** -wo SOURCE_EXTRA=1000 -tr **5.0 5.0
 
 Some explanation of the key parameters:
 
-**-t_srs EPSG:32620 **\\
+**-t_srs EPSG:32620 **
 CRS to match where the heightmap is from in the world.
 
-**-tr 5.0 5.0**\\
+**-tr 5.0 5.0**
 The desired resolution of your heightmap, match with **Cell size** set within your Mapframe properties in Terrain Builder:
 
 {{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-04.png}}
 
-**-te 576787.687480 1841104.815839 597267.687480 1861584.815839**\\
+**-te 576787.687480 1841104.815839 597267.687480 1861584.815839**
 The 4 long figures represent the **extents** of your square, and should be replaced with your own figures obtained in previous step.
 
 Update the paths to match where you are storing your source heightmap, and where you want the output tif saved to.
 
-Input:\\
+Input:
 **D:/Arma/Heightmaps/Opentopo/output_srtm.asc**  use double quotes around your input path if it contains any blanks
 
-Output:\\
+Output:
 **D:/Arma/QGIS/Montserrat/converted.tif**
 
 **Run second GDAL command - converting tif from above step to a Terrain Builder friendly .asc**
