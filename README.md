@@ -84,7 +84,7 @@ Right click on your shapefile in layers window & select ‘**Toggle Editing**’
 
 From menu -- **View** → **Toolbars** → **Advanced Digitizing Toolbar**
 
-![Ross-QGIS-Tutorial-16b.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-16b.png)
+![Ross-QGIS-Tutorial-16.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-16.png)
 
 Select ‘**Add Polygon Feature**’
 
