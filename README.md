@@ -61,9 +61,10 @@ Clicking on the CRS section bottom right within QGIS -- will bring up the Projec
 ![Ross-QGIS-Tutorial-11b.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-11b.png)
 
 Select the CRS to match your real world data, in this example its ‘**WGS 84 UTM zone 20N**’ because the terrain is from the Montserrat in the Caribbean. See also [UTM projection](https://pmc.editing.wiki/doku.php?id=arma3:terrain).
+
 This will ensure your QGIS project space works appropriately with any other data you want to add - eg road shapefiles etc. Terrain Builder will only use UTM 31N but we'll get to that later.
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-13b.png}}
+![Ross-QGIS-Tutorial-13b.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-13b.png)
 
 **Create shapefile & generate square feature using Advanced Digitizing panel**
 
@@ -75,31 +76,31 @@ Change Geometry type to ‘Polygon’
 
 Match CRS so it is the same as that just configured in above step
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-14b.png}}
+![Ross-QGIS-Tutorial-14b.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-14b.png)
 
 Right click on your shapefile in layers window & select ‘**Toggle Editing**’
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-15b.png}}
+![Ross-QGIS-Tutorial-15b.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-15b.png)
 
 From menu -- **View** → **Toolbars** → **Advanced Digitizing Toolbar**
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-16.png}}
+![Ross-QGIS-Tutorial-16b.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-16b.png)
 
 Select ‘**Add Polygon Feature**’
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-17.png}}
+![Ross-QGIS-Tutorial-17.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-17.png)
 
 Select Enable advanced digitizing tools
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-18.png}}
+![Ross-QGIS-Tutorial-18.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-18.png)
 
 To create a perfect square, **left mouse click** for your **top left** starting point, move your mouse to the right a little, then press ‘**d**’ on keyboard, type in the exact width (distance) required (in this example ‘20480’) then immediately press **Enter** -- be careful not to move the mouse before pressing **Enter** or it will mess up the number. Press **left mouse click** and you will have drawn your first horizontal line which turns red. By default this tool snaps to 90 degree angles, making it easy to draw your lines. Now to draw the vertical line start moving mouse your down, press ‘d’ again and type in same figure as above, press **Enter** and another **left mouse click**, repeat the process for the last 2 lines of the square.
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-19b.png}}
+![Ross-QGIS-Tutorial-19b.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-19b.png)
 
 See a short video example using the **Advanced Digitizing** tool:
 
-{{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-AdvancedDigitizing.gif}}
+![AdvancedDigitizing.gif](https://www.rossedwards.co.uk/arma/tutorial/AdvancedDigitizing.gif)
 
 After the last **left mouse click** from the step above, the tool is still waiting to plot more points, so to finalise the square do a **right mouse click**
 
