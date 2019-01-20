@@ -177,7 +177,7 @@ os.system(r'''gdal_translate -of AAIGrid D:/Arma/QGIS/Montserrat/converted.tif D
 
 # Satellite image:
 
-### For single tile export
+## For single tile export
 
 **Load in just the '.map' files generated from Terra incognita into QGIS**
 
@@ -220,7 +220,7 @@ Sets the resolution of your satellite image to 1mtr per pixel - which is recomme
 Clips to shapefile square extents
 
 
-==== For 4 tile export ====
+## For 4 tile export
 
 Detailing additional steps required for a 4 tile export -- which would suit those terrains that are 40960px x 40960px and higher.
 
