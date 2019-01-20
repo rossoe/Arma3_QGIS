@@ -10,7 +10,7 @@ So I reworked the process by getting a bit more under the hood, and using GDAL c
 
 This tutorial used the following software:
 
-**[[https://qgis.org/en/site/forusers/download.html|QGIS v3.4.3]]**
+[QGIS v3.4.3](https://qgis.org/en/site/forusers/download.html)
 
 **[[https://sourceforge.net/projects/terraincognita2/files/|Terra Incognita v2.45]]**
 
