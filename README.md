@@ -116,17 +116,17 @@ This will then bring up an attributes dialogue -- just type any number and Enter
 
 Activate the toolbox if it is not already available
 
-![Ross-QGIS-Tutorial-new-12.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-12.png)
+![Ross-QGIS-Tutorial-new-12.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-12.png)
 
 Start typing '**vector**' in Processing Toolbox search bar, and you will see '**Vector information**'
 
 Double click it and make sure your square **input layer** is selected - then just click **Run**
 
-![Ross-QGIS-Tutorial-new-01.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-01.png)
+![Ross-QGIS-Tutorial-new-01.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-01.png)
 
 You will only need to copy the **Extent** figures, which we will use within the GDAL commands in the next step
 
-![Ross-QGIS-Tutorial-new-02.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-02.png)
+![Ross-QGIS-Tutorial-new-02.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-02.png)
 
 **Run the first GDAL command which will - set CRS, cell size and then clip to shapefile square extents**
 
@@ -134,7 +134,7 @@ From menu - **Plugins** > **Python Console**
 
 Click '**Show Editor**'
 
-![Ross-QGIS-Tutorial-new-03.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-03.png)
+![Ross-QGIS-Tutorial-new-03.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-03.png)
 
 The blank window on the right is where you will paste GDAL commands
 
@@ -153,7 +153,7 @@ CRS to match where the heightmap is from in the world.
 
 The desired resolution of your heightmap, match with **Cell size** set within your Mapframe properties in Terrain Builder:
 
-![Ross-QGIS-Tutorial-new-04.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-04.png)
+![Ross-QGIS-Tutorial-new-04.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-04.png)
 
 **-te 576787.687480 1841104.815839 597267.687480 1861584.815839**
 
@@ -218,7 +218,7 @@ Sets the CRS
 
 Sets the resolution of your satellite image to 1mtr per pixel - which is recommended. Make sure it matches your settings within Terrain Builder.
 
-![Ross-QGIS-Tutorial-new-05.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-05.png)
+![Ross-QGIS-Tutorial-new-05.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-05.png)
 
 **-te 576787.687480 1841104.815839 597267.687480 1861584.815839**
 
@@ -249,7 +249,7 @@ Set it to save new grid feature to .shp file
 
 After clicking '**Use Layer Extent**' Select the shapefile layer for your square
 
-![Ross-QGIS-Tutorial-new-13.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-13.png)
+![Ross-QGIS-Tutorial-new-13.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-13.png)
 
 After clicking **Run**, your original square will then be Covered with a new grid of 4 tiles -- perfect quarters of your original square
 
@@ -287,11 +287,11 @@ You will then have 4 tiles which we can use to gather each quarters extents
 
 **Obtain extents from each quarter feature**
 
-![Ross-QGIS-Tutorial-new-06.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-06.png)
+![Ross-QGIS-Tutorial-new-06.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-06.png)
 
 Copy extents to clipboard
 
-![Ross-QGIS-Tutorial-new-07.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-07.png)
+![Ross-QGIS-Tutorial-new-07.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-07.png)
 
 And list them out for safe keeping -
 
@@ -316,18 +316,18 @@ os.system(r'''gdalwarp -t_srs EPSG:32620 -r cubic -wo SOURCE_EXTRA=1000 -tr 1.0 
 
 Open your asc and change the following:
 
-![Ross-QGIS-Tutorial-new-14.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-14.png)
+![Ross-QGIS-Tutorial-new-14.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-14.png)
 
 Before loading the asc file into Terrain Builder, delete the .prj file. Otherwise it will not import into TB.
 
-![Ross-QGIS-Tutorial-new-09.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-09.png)
+![Ross-QGIS-Tutorial-new-09.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-09.png)
 
 **Satellite image**
 
 
 Before loading the satellite image into Terrrain Builder delete the .bmp.aux file
 
-![Ross-QGIS-Tutorial-new-08.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-08.png)
+![Ross-QGIS-Tutorial-new-08.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-08.png)
 
 
 # Managing the project assets within QGIS
@@ -339,7 +339,7 @@ Save your QGIS project so that you can return to export further data at a later 
 Layers can be tidied up to hold the essentials ready for the next time you want to re-run GDAL commands, or export anything else like road shapefiles or mask layers etc.
 
 
-![Ross-QGIS-Tutorial-new-11.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-new-11.png)
+![Ross-QGIS-Tutorial-new-11.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-11.png)
 
 **Coming Soon:**
   * Road shapefile creation
