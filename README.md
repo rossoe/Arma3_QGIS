@@ -33,14 +33,14 @@ I have referenced Terra Incognita because i felt it was the easiest way to obtai
 
 **For single tile export**
 
-  * Load in just the '.map' files generated in Terra Incognita into QGIS
+  * Load in just the '.map' files generated from Terra Incognita into QGIS
   * Merge rasters
   * Obtain extents from square feature
   * gdalwarp command will set cell size, CRS and then clip to shapefile square extents
 
 **For 4 tile export (large projects 40960 and above)**
 
-  * Load in just the '.map' files generated in Terra Incognita into QGIS
+  * Load in just the '.map' files generated from Terra Incognita into QGIS
   * Merge Rasters
   * Create grid -- 2 x 2 Feature
   * Move each quarter to its own shapefile layer
