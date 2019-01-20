@@ -137,8 +137,8 @@ The blank window on the right is where you will paste GDAL commands
 
 Now you are ready to edit the command below to match your data - sections in bold are the parts to edit:
 
-import os\\
-os.system(r%%'''%%gdalwarp **-t_srs EPSG:32620** -wo SOURCE_EXTRA=1000 **-tr 5.0 5.0** -srcnodata "-9999" -r cubic -of GTiff **-te 576787.687480 1841104.815839 597267.687480 1861584.815839 D:/Arma/Heightmaps/Opentopo/output_srtm.asc** **D:/Arma/QGIS/Montserrat/converted.tif**%%'''%%)
+import os
+os.system(r'''gdalwarp -t_srs EPSG:32620 -wo SOURCE_EXTRA=1000 -tr 5.0 5.0 -srcnodata ”-9999” -r cubic -of GTiff -te 576787.687480 1841104.815839 597267.687480 1861584.815839 D:/Arma/Heightmaps/Opentopo/output_srtm.asc D:/Arma/QGIS/Montserrat/converted.tif''')
 
 Some explanation of the key parameters:
 
@@ -165,8 +165,8 @@ Output:\\
 
 Remember to change the paths in below command to match where your files are located
 
-import os\\
-os.system(r%%'''%%gdal_translate -of AAIGrid **D:/Arma/QGIS/Montserrat/converted.tif D:/Arma/QGIS/Montserrat/final.asc**%%'''%%)
+import os
+os.system(r'''gdal_translate -of AAIGrid D:/Arma/QGIS/Montserrat/converted.tif D:/Arma/QGIS/Montserrat/final.asc''')
 
 
 ===== Satellite image =====
@@ -197,8 +197,8 @@ You should already have this from working on heightmap above   **576787.687480 1
 
 **Run GDAL command**
 
-import os\\
-os.system(r%%'''%%gdalwarp **-t_srs EPSG:32620** -r cubic -wo SOURCE_EXTRA=1000 **-tr 1.0 1.0** -r cubic -of BMP **-te 576787.687480 1841104.815839 597267.687480 1861584.815839** D:/Arma/QGIS/Montserrat/merged.tif D:/Arma/QGIS/Montserrat/mont.bmp%%'''%%)
+import os
+os.system(r'''gdalwarp -t_srs EPSG:32620 -r cubic -wo SOURCE_EXTRA=1000 -tr 1.0 1.0 -r cubic -of BMP -te 576787.687480 1841104.815839 597267.687480 1861584.815839 D:/Arma/QGIS/Montserrat/merged.tif D:/Arma/QGIS/Montserrat/mont.bmp''')
 
 Some explanation of the key parameters:
 
@@ -291,8 +291,8 @@ BR - Extent: (587027.687480, 1841104.815839) - (597267.687480, 1851344.815839)\\
 
 **Run GDAL command for each quarter to set cell size and CRS and clip to shapefile square extents**
 
-import os\\
-os.system(r%%'''%%gdalwarp -t_srs EPSG:32620 -r cubic -wo SOURCE_EXTRA=1000 -tr 1.0 1.0 -r cubic -of BMP -te 576787.687480 1841104.815839 597267.687480 1861584.815839 D:/Arma/QGIS/Montserrat/merged.tif D:/Arma/QGIS/Montserrat/**TR.bmp**%%'''%%)
+import os
+os.system(r'''gdalwarp -t_srs EPSG:32620 -r cubic -wo SOURCE_EXTRA=1000 -tr 1.0 1.0 -r cubic -of BMP -te 576787.687480 1841104.815839 597267.687480 1861584.815839 D:/Arma/QGIS/Montserrat/merged.tif D:/Arma/QGIS/Montserrat/TR.bmp''')
 
 
 ===== Loading your assets into Terrain Builder =====
