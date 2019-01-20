@@ -204,7 +204,7 @@ You should already have this from working on heightmap above   **576787.687480 1
 **Run GDAL command**
 
 import os
-os.system(r'''gdalwarp -t_srs EPSG:32620 -r cubic -wo SOURCE_EXTRA=1000 -tr 1.0 1.0 -r cubic -of BMP -te 576787.687480 1841104.815839 597267.687480 1861584.815839 D:/Arma/QGIS/Montserrat/merged.tif D:/Arma/QGIS/Montserrat/mont.bmp''')
+os.system(r'''gdalwarp -t_srs EPSG:**32620** -r cubic -wo SOURCE_EXTRA=1000 -tr **1.0 1.0** -r cubic -of BMP -te **576787.687480 1841104.815839 597267.687480 1861584.815839** **D:/Arma/QGIS/Montserrat/merged.tif D:/Arma/QGIS/Montserrat/mont.bmp**''')
 
 Some explanation of the key parameters:
 
