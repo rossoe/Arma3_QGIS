@@ -12,7 +12,7 @@ This tutorial used the following software:
 
 [QGIS v3.4.3](https://qgis.org/en/site/forusers/download.html)
 
-**[[https://sourceforge.net/projects/terraincognita2/files/|Terra Incognita v2.45]]**
+[Terra Incognita v2.45](https://sourceforge.net/projects/terraincognita2/files/)
 
 I have referenced Terra Incognita because i felt it was the easiest way to obtain satellite data in the oziexplorer map format - see this **[[https://pmc.editing.wiki/doku.php?id=arma3:terrain:satellite-texture-terra-incognita|tutorial]]** for help using Terra Incognita.
 
