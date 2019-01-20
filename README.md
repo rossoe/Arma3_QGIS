@@ -142,7 +142,7 @@ os.system(r'''gdalwarp -t_srs EPSG:**32620** -wo SOURCE_EXTRA=1000 -tr **5.0 5.0
 
 Some explanation of the key parameters:
 
-**-t_srs EPSG:32620 **
+**-t_srs EPSG:32620**
 
 CRS to match where the heightmap is from in the world.
 
