@@ -177,7 +177,7 @@ os.system(r'''gdal_translate -of AAIGrid D:/Arma/QGIS/Montserrat/converted.tif D
 
 # Satellite image:
 
-==== For single tile export ====
+### For single tile export
 
 **Load in just the '.map' files generated from Terra incognita into QGIS**
 
