@@ -60,7 +60,7 @@ Clicking on the CRS section bottom right within QGIS -- will bring up the Projec
 
 ![Ross-QGIS-Tutorial-11b.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-11b.png)
 
-Select the CRS to match your real world data, in this example its ‘**WGS 84 UTM zone 20N**’ because the terrain is from the Montserrat in the Caribbean. See also [[https://pmc.editing.wiki/doku.php?id=arma3:terrain:utm-projection|UTM projection]].\\
+Select the CRS to match your real world data, in this example its ‘**WGS 84 UTM zone 20N**’ because the terrain is from the Montserrat in the Caribbean. See also [UTM projection](https://pmc.editing.wiki/doku.php?id=arma3:terrain).
 This will ensure your QGIS project space works appropriately with any other data you want to add - eg road shapefiles etc. Terrain Builder will only use UTM 31N but we'll get to that later.
 
 {{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-13b.png}}
