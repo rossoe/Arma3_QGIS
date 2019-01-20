@@ -304,7 +304,7 @@ import os
 os.system(r'''gdalwarp -t_srs EPSG:32620 -r cubic -wo SOURCE_EXTRA=1000 -tr 1.0 1.0 -r cubic -of BMP -te 576787.687480 1841104.815839 597267.687480 1861584.815839 D:/Arma/QGIS/Montserrat/merged.tif D:/Arma/QGIS/Montserrat/TR.bmp''')
 
 
-===== Loading your assets into Terrain Builder =====
+# Loading your assets into Terrain Builder
 
 
 **Heightmap (.asc) edits**
@@ -325,7 +325,7 @@ Before loading the satellite image into Terrrain Builder delete the .bmp.aux fil
 {{https://pmc.editing.wiki/images/Ross-QGIS-Tutorial-08.png}}
 
 
-===== Managing the project assets within QGIS =====
+## Managing the project assets within QGIS
 
 
 Save your QGIS project so that you can return to export further data at a later date.
