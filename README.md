@@ -384,12 +384,16 @@ The first two values will be used in the v.transform step below.
 Your heightmap asc must adhere to Terrain Builders required values of **easting 200000** and **northing 0** 
 Your road shapefile also needs to line up to the same values - we will use **v.transform** to achieve this
 
-So taking the extent values we grabbed in previous step -\\
-We will do the following calculations to bring these values to (**200000** and **0**):\\
-**Easting:  576787.687480  - 376787.68748 = 200000**\\
-**Northing: 1841104.815839 - 1841104.815839 = 0**\\
+So taking the extent values we grabbed in previous step -
 
-**-376787.68748**\\
+We will do the following calculations to bring these values to (**200000** and **0**):
+
+**Easting:  576787.687480  - 376787.68748 = 200000**
+
+**Northing: 1841104.815839 - 1841104.815839 = 0**
+
+**-376787.68748**
+
 **-1841104.815839**
 
 
