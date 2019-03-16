@@ -470,7 +470,5 @@ Perfectly overlaid within **Terrain builder:**
 
 
 **Coming Soon:**
-  * Road shapefile creation
   * Assisted image classification - for creation of mask
   * 3d preview using Qgis2threejs
-
