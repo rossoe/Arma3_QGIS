@@ -341,6 +341,134 @@ Layers can be tidied up to hold the essentials ready for the next time you want 
 
 ![Ross-QGIS-Tutorial-new-11.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-11.png)
 
+# Preparing Road Shapefile
+
+**Load into QGIS (drag and drop) road shapefile**
+
+![Ross-QGIS-Tutorial-37.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-37.png)
+
+**Clip vector to square shape**
+Top Menu - **Vector** > **Geoprocessing Tools** > **Clip**
+
+![Ross-QGIS-Tutorial-38.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-38.png)
+
+Save features from clip to new shapefile -  selecting correct **CRS UTM-20**\\
+
+Top Menu - **Layer** > **Save As**
+
+![Ross-QGIS-Tutorial-39.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-39.png)
+
+**Set road shapefile to CRS - 31N**
+
+RMB on road shapefile > **Set CRS** > **Set Layer CRS**
+
+![Ross-QGIS-Tutorial-40.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-40.png)
+
+![Ross-QGIS-Tutorial-41.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-41.png)
+
+**Set QGIS project CRS to UTM- 31N (bottom right corner):**
+
+![Ross-QGIS-Tutorial-42.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-42.png)
+
+**Collect extents from your square shapefile:**
+
+![Ross-QGIS-Tutorial-43.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-43.png)
+
+Extent: (**576787.687480**, **1841104.815839**) - (597267.687480, 1861584.815839)
+
+The first two values will be used in the v.transform step below.
+
+
+**v.transform on road shapefile using calculated extents from square shapefile**
+
+Your heightmap asc must adhere to Terrain Builders required values of **easting 200000** and **northing 0** 
+Your road shapefile also needs to line up to the same values - we will use **v.transform** to achieve this
+
+So taking the extent values we grabbed in previous step -\\
+We will do the following calculations to bring these values to (**200000** and **0**):\\
+**Easting:  576787.687480  - 376787.68748 = 200000**\\
+**Northing: 1841104.815839 - 1841104.815839 = 0**\\
+
+**-376787.68748**\\
+**-1841104.815839**
+
+
+Having figured out the correct figures plug them into the **v.transform** process
+
+![Ross-QGIS-Tutorial-44.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-44.png)
+
+Drag and Drop into QGIS your heightmap asc - the one you are able to load into Terrain builder - already adjusted to (**200000**, **0**)
+
+Set CRS on above asc to **UTM - 31N**
+
+Right click on asc in **Layers** > **Zoom to Layer**
+
+In **Layers** panel drag the asc below your **transformed road shapefile** - so you can see the roads layered above the asc
+
+![Ross-QGIS-Tutorial-45.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-45.png)
+
+Your roads should now be perfectly aligned above your heightmap
+
+![Ross-QGIS-Tutorial-46.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-46.png)
+
+==== Setting ID and ORDER fields ====
+
+RMB on transformed shapefile layer > Toggle **Editing**
+
+RMB on transformed shapefile layer  > Open **Attribute Table**
+
+
+Click **Delete field** - select all fields and press **OK**
+
+![Ross-QGIS-Tutorial-47.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-47.png)
+
+New Field - Name '**ID**' - length **0**
+
+![Ross-QGIS-Tutorial-48.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-48.png)
+
+New Field - Name '**ORDER**' - length 0
+
+![Ross-QGIS-Tutorial-49.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-49.png)
+
+Toggle - **Multi Edit mode**
+
+![Ross-QGIS-Tutorial-50.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-50.png)
+
+ID - Enter **0** - click **Update All**
+
+![Ross-QGIS-Tutorial-51.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-51.png)
+
+Select ORDER from drop down - Enter **1** - click **Update all**
+
+![Ross-QGIS-Tutorial-52.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-52.png)
+
+Click - **Switch to table view**
+
+![Ross-QGIS-Tutorial-53.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-53.png)
+
+Click **Save**
+
+![Ross-QGIS-Tutorial-54.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-54.png)
+
+RMB on transformed road shapefile - **Toggle Editing** to save the changes 
+
+
+**Switching to Terrain Builder -**
+ 
+
+**Load your road shapefile**
+
+Top menu - **File** > **Import** > **Shapes**
+
+Click **OK**
+
+![Ross-QGIS-Tutorial-55.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-55.png)
+
+Perfectly overlaid within **Terrain builder:**
+
+![Ross-QGIS-Tutorial-56.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-56.png)
+
+
 **Coming Soon:**
   * Road shapefile creation
   * Assisted image classification - for creation of mask
