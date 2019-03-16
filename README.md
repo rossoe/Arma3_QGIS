@@ -411,7 +411,7 @@ Your roads should now be perfectly aligned above your heightmap
 
 ![Ross-QGIS-Tutorial-46.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-46.png)
 
-==== Setting ID and ORDER fields ====
+## Setting ID and ORDER fields
 
 RMB on transformed shapefile layer > Toggle **Editing**
 
