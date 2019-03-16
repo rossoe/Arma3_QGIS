@@ -70,7 +70,7 @@ This will ensure your QGIS project space works appropriately with any other data
 
 **Create shapefile & generate square feature using Advanced Digitizing panel**
 
-Top menu -- **Layer ** > **Create Layer** > **New Shapefile Layer**
+Top menu -- **Layer** > **Create Layer** > **New Shapefile Layer**
 
 Save to project folder location
 
