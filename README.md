@@ -472,7 +472,44 @@ Perfectly overlaid within **Terrain builder:**
 
 ![Ross-QGIS-Tutorial-56.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-56.png)
 
+# 3D Preview using Qgis2threejs
+
+If you want to see an instant 3d preview of your terrain within QGIS you can with the amazing plugin **Qgis2threejs**
+
+First install it:
+
+Top menu > **Plugins > Manage and Install Plugins**
+
+![Ross-QGIS-Tutorial-57.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-57.png)
+
+
+RMB on the Merged layer and select **Zoom to Layer**
+
+
+Then select both the **Merged** raster, and the original source heightmap - deselect all other layers
+
+![Ross-QGIS-Tutorial-58.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-58.png)
+
+
+Start the Qgis2threejs plugin - Top Menu > **Web > Qgis2threejs > Qgis2threejs Exporter**
+
+![Ross-QGIS-Tutorial-59.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-59.png)
+
+Select source heightmap and nothing else
+
+RMB on heightmap > **Properties**
+
+Set the **Resampling** level to **6**
+
+Set **Resolution** to **400%**
+
+![Ross-QGIS-Tutorial-60.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-60.png)
+
+Enjoy browsing around your terrain in 3D:
+
+![Ross-QGIS-Tutorial-61.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-61.png)
+
+You can also export your terrain to a browser interface if you want - **File > Export to web**
 
 **Coming Soon:**
   * Assisted image classification - for creation of mask
-  * 3d preview using Qgis2threejs
