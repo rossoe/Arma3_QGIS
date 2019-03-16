@@ -4,7 +4,7 @@ This process has often been described using Global Mapper, but I wanted to detai
 
 The goal was to achieve an export satellite image and heightmap with the same or better quality than would be possible with Global Mapper.
 
-I have used GDAL command line where possible, this also simplifies the process a little and reduced even further processing on the data.
+I've used GDAL command lines where possible, which simplifies the process a little, and reduced additional processing on the data.
 
 This tutorial used the following software:
 
