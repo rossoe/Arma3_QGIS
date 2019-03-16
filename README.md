@@ -4,9 +4,7 @@ This process has often been described using Global Mapper, but I wanted to detai
 
 The goal was to achieve an export satellite image and heightmap with the same or better quality than would be possible with Global Mapper.
 
-The is my second revision of this process as I recently discovered that due to an update to GDAL (**2.4.0**) one of the key steps in the original tutorial using '**Clip Raster by Mask Layer**' no longer works perfectly!
-
-So I reworked the process by getting a bit more under the hood, and using GDAL command line where possible, this also simplifies the process a little and reduced even further processing on the data.
+I have used GDAL command line where possible, this also simplifies the process a little and reduced even further processing on the data.
 
 This tutorial used the following software:
 
