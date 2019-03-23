@@ -1,5 +1,7 @@
 # QGIS Real World Data
 
+Here you will find all the steps required to get real world data into Arma 3 (RV4 engine) using only open source tools.
+
 ## [Full Tutorial - see wiki pages](https://github.com/rossoe/Arma3_QGIS/wiki)
 
 ![iow_3.jpg](https://www.rossedwards.co.uk/arma/tutorial/iow_3.jpg)
