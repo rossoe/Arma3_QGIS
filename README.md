@@ -2,8 +2,8 @@
 
 ## [Full Tutorial - see wiki pages](https://github.com/rossoe/Arma3_QGIS/wiki)
 
-![Ross-QGIS-Tutorial-61.png](https://www.rossedwards.co.uk/arma/tutorial/Ross-QGIS-Tutorial-61.png)
-
-
-**Coming Soon:**
-  * Assisted image classification - for creation of mask
+![iow_3.jpg](https://www.rossedwards.co.uk/arma/tutorial/iow_3.jpg)
+![iow_1.jpg](https://www.rossedwards.co.uk/arma/tutorial/iow_1.jpg)
+![iow_4.jpg](https://www.rossedwards.co.uk/arma/tutorial/iow_4.jpg)
+![iow_5.jpg](https://www.rossedwards.co.uk/arma/tutorial/iow_5.jpg)
+![iow_6.jpg](https://www.rossedwards.co.uk/arma/tutorial/iow_6.jpg)
