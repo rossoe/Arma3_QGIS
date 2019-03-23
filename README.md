@@ -1,4 +1,4 @@
-# QGIS Real World Data Tutorial
+# QGIS Real World Data
 
 ## [Full Tutorial - see wiki pages](https://github.com/rossoe/Arma3_QGIS/wiki)
 
