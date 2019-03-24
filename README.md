@@ -10,3 +10,4 @@ Here you will find all the steps required to get real world data into Arma 3 (RV
 ![iow_4.jpg](https://www.rossedwards.co.uk/arma/tutorial/iow_4.jpg)
 ![iow_5.jpg](https://www.rossedwards.co.uk/arma/tutorial/iow_5.jpg)
 ![iow_6.jpg](https://www.rossedwards.co.uk/arma/tutorial/iow_6.jpg)
+![IOW2.PNG](https://www.rossedwards.co.uk/arma/tutorial/IOW2.PNG)
